@@ -16,10 +16,6 @@
       "type": "email",
       "required": true
     },
-    "is_paid": {
-      "type": "boolean",
-      "default": false
-    },
     "amount": {
       "type": "decimal"
     },
@@ -43,6 +39,9 @@
     },
     "phone": {
       "type": "string"
+    },
+    "order_id": {
+      "type": "uid"
     }
   }
 }

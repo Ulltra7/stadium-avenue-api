@@ -2,8 +2,8 @@ module.exports = {
   async afterCreate(event) {
     const { result } = event;
 
-    // console.log("Created an event: ", result);
-    //console.log(strapi.plugins["email"].services.email);
+    console.log("Created an event: ", result);
+    console.log(strapi.plugins["email"].services.email);
 
     try {
       const res = await strapi.plugins["email"].services.email.send({
